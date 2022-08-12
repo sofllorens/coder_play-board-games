@@ -18,6 +18,7 @@ body {
 .container {
     max-width: 1400px;
     margin: auto;
+    padding: 0;
 }
 
 
@@ -149,6 +150,7 @@ header nav {
     flex-direction: column;
     padding-bottom: 25px;
     text-align: center;
+    margin-left: 320px;
 }
 
 
@@ -271,8 +273,38 @@ main {
 .main-menu__title {
     padding: 30px;
     font-size: 30px;
+    color: #354F52;
 }
 
+.cat__descrip__news {
+    width: 400px;
+    font-size: 20px;
+}
+
+.main-menu__somos {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: justify;
+    padding: 30px;
+    border: 2px solid #354F52;
+    border-radius: 20px;
+    margin: 30px;
+    height: 800px;
+}
+
+.cat__descrip__somos {
+    font-size: 40px;
+    color: #354F52;
+}
+
+.cat__descrip__game {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
 
 
 
@@ -430,6 +462,29 @@ footer a:hover {
     margin-bottom: 50px;
 }
 
+.form-control {
+    width: 250px;
+    margin: 10px;
+    height: 100px;
+}
+
+.btn-send {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #354F52;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: #354F52;
+    font-family: 'Tw Cen MT Condensed', sans-serif;
+    font-size: 18px;
+    color: #E3B23C;
+    width: 250px;
+    height: 50px;
+}
+
+.btn-send:hover {
+    background-color: #E3B23C;
+    transition: all .4s;
+    color: #354F52;
+}
 
 
 @media (min-width: 720px) {
@@ -446,6 +501,10 @@ footer a:hover {
         padding-bottom: 0;
         padding-right: 30px;
     }
+}
+
+.form-control2 {
+    height: 50px;
 }
 
 

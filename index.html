@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -17,8 +18,8 @@
             <p class="logo animate__animated animate__fadeInRight">Play Board Games</p>
             <nav>
                 <a href="./views/news.html">NEWS!</a>
-                <a href="#">TOP JUEGOS</a>
-                <a href="#">QUIENES SOMOS</a>
+                <a href="./views/top.html">TOP JUEGOS</a>
+                <a href="./views/somos.html">QUIENES SOMOS</a>
                 <a href="#footer">CONTACTO</a>
             </nav>
             <div class="search-box">
@@ -44,6 +45,48 @@
                     <h3 class="categories__title">JUGADORES</h3>
                     <h3 class="categories__title">INTERACCIÓN</h3>
                 </article>
+                <ul class="categories">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">CATEGORIAS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">EDAD</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">DURACIÓN</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">JUGADORES</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">INTERACCIÓN</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </ul>
             </div>
         </section>
     
@@ -55,7 +98,7 @@
                     Son juegos donde la estrategia y las tácticas son fundamentales. Juegos de pensar bien tus movimientos para vencer a tus rivales o llegar al objetivo de victoria.</p>
                     <div class="main-games">
                         <div class="card-abstractos">
-                            <form action="">
+                            <form action="./views/hive.html">
                                 <button class="secondary-button">HIVE</button>
                             </form>
                         </div>
@@ -81,7 +124,10 @@
             <section id="ameritrash">
                 <div class="container">
                     <h3>AMERITRASH</h3>
-                    <p class="cat__descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum officiis architecto quaerat maiores, expedita, ex quae adipisci error deserunt ipsa praesentium eligendi nam. Ex amet voluptatem iure ullam iusto dolorem?</p>
+                    <p class="cat__descrip">El origen del nombre viene de “basura americana”, pues eran juegos que venían de USA y en principio se despreciaban por cierto sector.
+                        Pero ahora ese término se ha instaurado e incluso se puede decir con orgullo que te gustan los ameritrash.
+                        Al contrario que los Eurogames, son juegos donde la temática es fundamental. Star Wars, los mitos de Lovecraft, o la fantasía épica tipo Tolkien, son temáticas habituales en estos juegos.
+                        Además, el azar suele pesar mucho. Muchas acciones se resuelven tirando dadas, o robando cartas aleatorias. También hay estrategia pero tiene menos peso que en un eurogame. Suelen tener más duración y más complejidad de aprendizaje.</p>
                     <div class="main-games">
                         <div class="card-ameritrash">
                             <form action="">
@@ -130,10 +176,10 @@
             <div class="column3">
                 <h2 class="footer__title">Contacto</h2>
                 <form class="column__content" action="./views/enviado.html" method="post" enctype="">
-                    <input type="email" name="mail" id="">
-                    <input type="text" name="nombre">
-                    <input type="text" name="mensaje">
-                    <input type="submit" value="Enviar">
+                    <input type="email" class="form-control" style="height: 40px;" id="floatingInput" placeholder="name@example.com">
+                    <textarea class="form-control" placeholder="Nombre" id="floatingTextarea2" style="height: 40px;"></textarea>
+                    <textarea class="form-control" placeholder="Escribe un mensaje" id="floatingTextarea2"></textarea>
+                    <button type="button" class="btn-send">ENVIAR</button>
                 </form>
             </div>
             <div class="column4">
@@ -146,5 +192,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
