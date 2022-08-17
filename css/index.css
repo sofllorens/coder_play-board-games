@@ -215,8 +215,8 @@ header a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: auto;
     justify-content: space-evenly;
+    margin: 0;
 }
 
 .categories__title {
@@ -233,7 +233,19 @@ header a:hover {
     width: 180px;
 }
 
-
+.nav-link {
+    background-color: rgb(202, 210, 197);
+    border-radius: 10px;
+    border: 2px solid;
+    color: rgb(53, 79, 82);
+    font-family: 'Tw Cen MT Condensed', sans-serif;
+    font-size: 23px;
+    margin: 25px 25px 25px;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    font-weight: bold;
+}
 
 
 main {
