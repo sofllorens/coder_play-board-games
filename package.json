@@ -1,0 +1,25 @@
+{
+  "name": "dos_play_board_games-llorens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss css/translated.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofllorens/coder_play-board-games.git"
+  },
+  "author": "Sofia Llorens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofllorens/coder_play-board-games/issues"
+  },
+  "homepage": "https://github.com/sofllorens/coder_play-board-games#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

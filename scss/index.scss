@@ -1,0 +1,131 @@
+@import './misc/variables';
+@import './misc/normalize';
+
+@import './partials/header';
+@import './partials/footer';
+
+@import './views/index';
+@import './views/about';
+@import './views/contact';
+
+
+
+.categories {
+    background-color: #E3B23C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+
+    &__title {
+        background-color: rgb(202, 210, 197);
+        border-radius: 10px;
+        border: 2px solid;
+        color: rgb(53, 79, 82);
+        font-family: 'Tw Cen MT Condensed', sans-serif;
+        font-size: 23px;
+        height: 30px;
+        margin: 25px 25px 25px;
+        text-align: center;
+        text-decoration: none;
+        width: 180px;
+    }
+
+    .nav-link {
+        background-color: rgb(202, 210, 197);
+        border-radius: 10px;
+        border: 2px solid;
+        color: rgb(53, 79, 82);
+        font-family: 'Tw Cen MT Condensed', sans-serif;
+        font-size: 23px;
+        margin: 25px 25px 25px;
+        text-align: center;
+        text-decoration: none;
+        width: 180px;
+        font-weight: bold;
+    }
+}
+
+
+main {
+    background-color: #CAD2C5;
+    margin-top: 50px;
+    
+    .main-games {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+    
+    }
+
+    .main-menu__news {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 30px;
+        border: 2px solid #354F52;
+        border-radius: 20px;
+        margin: 30px;
+    }
+
+    .main-menu__photo {
+        border-radius: 20px;
+        width: 110px;
+    }
+    
+    .main-menu__title {
+        padding: 30px;
+        font-size: 30px;
+        color: #354F52;
+    }
+
+    .main-menu__somos {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: justify;
+        padding: 30px;
+        border: 2px solid #354F52;
+        border-radius: 20px;
+        margin: 30px;
+        height: 800px;
+    }
+}
+
+
+
+.cat__descrip__game {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+
+@media (min-width: 720px) {
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+}
+
+
+
